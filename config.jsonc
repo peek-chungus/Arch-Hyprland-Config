@@ -1,0 +1,75 @@
+{
+    "layer": "top",
+ //   "width": 1920,
+   // "height": 45,
+    
+    "modules-left": [
+        
+        "sway/mode"
+    ],
+    "modules-center": [
+        "sway/window",
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "clock#date",
+        "clock#time"
+    ],
+    "clock#time": {
+        "interval": 1,
+        "format": " {:%I:%M %p}",
+        "format-alt": " {:%r}"
+    },
+    "clock#date": {
+        "interval": 60,
+        "format": "󰸗 {:%b %d %Y}",
+        "format-alt": "󰸗 {:%A %B %e %Y}"
+    },
+
+"pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-muted": "",
+    "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "phone-muted": "",
+        "portable": "",
+        "car": "",
+        "default": [
+            "",
+            ""
+        ]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": [
+        "Easy Effects Sink"
+    ]
+},
+"network": {
+    "interface": "wlan0",
+    "format": "{ifname}",
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": "󰊗 {ipaddr}/{cidr}",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "󰊗 {ifname} via {gwaddr}",
+    "tooltip-format-wifi": " {signalStrength}%",
+    "tooltip-format-ethernet": " {ifname}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+},
+"hyprland/workspaces": {
+ //   "format": "{name}",
+    "format": "",
+    "persistent-workspaces": {
+        "*": 5,
+        "HDMI-A-1": 5,
+        "DP-1": 5
+    }
+}
+}
