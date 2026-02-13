@@ -3,7 +3,7 @@
 terminal="kitty"
 browser="google-chrome-stable"
 discord="discord"
-minecraft="prismlaucnher"
+minecraft="prismlauncher"
 spotify="spotify-launcher"
 
 hyprctl dispatch workspace 1
