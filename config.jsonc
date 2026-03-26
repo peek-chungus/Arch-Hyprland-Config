@@ -1,8 +1,8 @@
 {
     "layer": "top",
- //   "width": 1920,
-   // "height": 45,
-    
+    "width": 1450,
+    "margin-top": 4,
+
     "modules-left": [
         
         "sway/mode"
@@ -20,12 +20,14 @@
     "clock#time": {
         "interval": 1,
         "format": " {:%I:%M %p}",
-        "format-alt": " {:%r}"
+        "format-alt": " {:%r}",
+        "tooltip": false
     },
     "clock#date": {
         "interval": 60,
         "format": "󰸗 {:%b %d %Y}",
-        "format-alt": "󰸗 {:%A %B %e %Y}"
+        "format-alt": "󰸗 {:%A %B %e %Y}",
+        "tooltip": false
     },
 
 "pulseaudio": {
@@ -61,7 +63,9 @@
     "tooltip-format-wifi": " {signalStrength}%",
     "tooltip-format-ethernet": " {ifname}",
     "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50
+    "max-length": 50,
+    "tooltip": false,
+    "interval": 60
 },
 "hyprland/workspaces": {
  //   "format": "{name}",
